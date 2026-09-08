@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed web development articles by Sumaiya about accessible UI, reliable API design, technical SEO, and website performance.">
+    <meta name="author" content="Sumaiya">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://sumaiya.dev/blog.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Web Development Articles | Sumaiya">
+    <meta property="og:description" content="Detailed, practical notes on frontend engineering, APIs, accessibility, SEO, and web performance.">
+    <meta property="og:url" content="https://sumaiya.dev/blog.html">
+    <meta property="og:site_name" content="Sumaiya | Full-Stack Web Developer">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Web Development Articles | Sumaiya">
+    <meta name="twitter:description" content="Detailed, practical notes on frontend engineering, APIs, accessibility, SEO, and web performance.">
+    <title>Web Development Articles | Sumaiya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "@id": "https://sumaiya.dev/blog.html#blog",
+        "url": "https://sumaiya.dev/blog.html",
+        "name": "Web Development Articles by Sumaiya",
+        "description": "Detailed articles about frontend development, API design, accessibility, SEO, and performance.",
+        "author": {
+            "@type": "Person",
+            "name": "Sumaiya",
+            "url": "https://sumaiya.dev/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">&lt;Dev<span>Sumaiya</span> /&gt;</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#blog" aria-current="page">Blog</a></li>
+            <li><a href="index.html#contact" class="btn-nav">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="blog-page section">
+        <header class="blog-page-header">
+            <p class="eyebrow">From the workbench</p>
+            <h1>Web Development <span class="text-gradient">Articles</span></h1>
+            <p>Detailed, practical notes on building digital experiences that are accessible, reliable, fast, and ready to grow.</p>
+            <a class="back-link" href="index.html#blog"><i class="fa-solid fa-arrow-left"></i> Back to all posts</a>
+        </header>
+
+        <div class="article-list">
+            <article class="full-article" id="building-better-user-experiences">
+                <header class="full-article-header">
+                    <p class="article-meta"><time datetime="2026-01-15">January 15, 2026</time> · 8 min read · Frontend</p>
+                    <h2>Building Better User Experiences: A Practical Guide to Accessible UI</h2>
+                    <p class="article-lead">An accessible interface is not a separate version of a product. It is a clearer, more resilient product for everyone.</p>
+                </header>
+                <h3>Start with the user task</h3>
+                <p>Before choosing colors, components, or animation, identify what a visitor needs to accomplish. The strongest interfaces make the primary task obvious, reduce unnecessary decisions, and provide useful feedback after every meaningful action.</p>
+                <p>Write the page structure around that task. Use one clear main heading, descriptive subheadings, short paragraphs, and labels that explain what a control will do. This helps people scanning on a phone, using a screen reader, or returning to the page after a distraction.</p>
+                <h3>Make the foundation semantic</h3>
+                <p>Native HTML elements provide behavior that custom controls often forget. Use buttons for actions, links for navigation, headings for hierarchy, lists for grouped items, and form labels that remain connected to their inputs. Semantic structure improves keyboard navigation and gives search engines a more accurate view of the content.</p>
+                <p>Keyboard testing is a quick, high-value check. Move through the page with Tab, activate controls with Enter or Space, confirm the focus indicator is visible, and make sure the focus order follows the visual order. If an important action cannot be completed without a mouse, the interface is not finished.</p>
+                <h3>Design for different screens and conditions</h3>
+                <p>Responsive design is more than shrinking a desktop layout. Content should reflow without horizontal scrolling, tap targets should have enough space, and text should remain readable when users zoom in. Reserve space for images and asynchronous content so the page does not jump while it loads.</p>
+                <p>Progressive enhancement keeps the experience dependable. Start with content and interactions that work in plain HTML, then layer on styling and JavaScript. This approach makes failures less dramatic and gives performance a stronger baseline.</p>
+                <h3>A practical review checklist</h3>
+                <ul>
+                    <li>Use meaningful headings and descriptive link text.</li>
+                    <li>Check text and interactive controls for sufficient color contrast.</li>
+                    <li>Provide visible focus styles and keyboard access.</li>
+                    <li>Give images useful alternative text, or mark decorative images appropriately.</li>
+                    <li>Test the page at narrow widths, with zoom, and without hover.</li>
+                </ul>
+            </article>
+
+            <article class="full-article" id="api-design-essentials">
+                <header class="full-article-header">
+                    <p class="article-meta"><time datetime="2026-02-10">February 10, 2026</time> · 10 min read · Backend</p>
+                    <h2>API Design Essentials for Reliable Web Applications</h2>
+                    <p class="article-lead">A stable API is a product contract. Consistency makes that contract easier to understand, test, and maintain.</p>
+                </header>
+                <h3>Model resources around the domain</h3>
+                <p>Good REST APIs use URLs to describe resources and HTTP methods to describe the operation. A collection such as <code>/projects</code> can be listed or created, while a specific resource such as <code>/projects/42</code> can be retrieved, updated, or removed. Predictable paths make the API easier for both humans and client libraries to use.</p>
+                <p>Keep naming conventions consistent. Choose plural nouns, use one casing style, and avoid embedding action words in every route. When an operation is genuinely a command rather than a resource change, document that exception clearly.</p>
+                <h3>Make success and failure predictable</h3>
+                <p>Status codes should communicate the result without forcing clients to inspect an arbitrary message. Return successful responses with the appropriate 2xx code, validation problems with 4xx responses, and server failures with 5xx responses. Error payloads should include a stable code, a readable message, and field details when relevant.</p>
+                <p>Validation belongs at the boundary. Reject malformed data before it reaches business logic, but keep server-side validation even when a frontend already checks the same fields. Every client is an untrusted client, including an older version of your own application.</p>
+                <h3>Plan for growth</h3>
+                <p>Pagination protects both the server and the client as collections grow. Filtering and sorting should be explicit, bounded, and documented. For long-running operations, return a job resource or a clear accepted response rather than keeping a request open indefinitely.</p>
+                <p>Authentication answers who the caller is; authorization answers what that caller may do. Keep those concerns separate in the implementation and make permission failures indistinguishable from other resource restrictions when exposing sensitive information.</p>
+                <h3>Document the contract</h3>
+                <p>Document the normal response, validation failures, authentication failures, and unexpected errors together. Include example requests, response schemas, rate limits, and versioning expectations. Automated contract tests can then protect the agreement as the backend evolves.</p>
+            </article>
+
+            <article class="full-article" id="website-performance">
+                <header class="full-article-header">
+                    <p class="article-meta"><time datetime="2026-03-05">March 5, 2026</time> · 7 min read · Performance</p>
+                    <h2>Website Performance: The Improvements Users Notice First</h2>
+                    <p class="article-lead">Performance work is most useful when it follows the user's journey from first view to meaningful interaction.</p>
+                </header>
+                <h3>Prioritize the first useful view</h3>
+                <p>Visitors do not experience a performance score; they experience waiting, movement, and responsiveness. Start by identifying the content that communicates the page purpose. Deliver that content early, keep critical CSS small, and avoid loading secondary features before the first useful interaction is ready.</p>
+                <p>Reduce render-blocking work by removing unused resources, splitting JavaScript when appropriate, and loading nonessential scripts later. A smaller page is usually easier to maintain as well as faster to download.</p>
+                <h3>Stabilize the layout</h3>
+                <p>Unexpected movement is frustrating because it causes mistakes. Give images and embedded content explicit dimensions or aspect ratios, reserve space for dynamic regions, and avoid inserting banners above content after the page has rendered.</p>
+                <p>Use appropriately sized, compressed images and modern formats where browser support allows. Responsive image sources prevent a small phone from downloading an asset sized for a large desktop display.</p>
+                <h3>Measure real experience</h3>
+                <p>Lighthouse is useful for finding opportunities, but it is a lab tool. Pair it with real-user measurements and monitor loading, visual stability, and interaction responsiveness across the devices your audience actually uses.</p>
+                <p>Measure before and after each meaningful change. A faster score that comes with a worse user journey is not a successful optimization. The best improvements are visible in the first view, reduce friction during interaction, and keep the page stable.</p>
+                <h3>A focused optimization order</h3>
+                <ol>
+                    <li>Remove unnecessary requests and third-party scripts.</li>
+                    <li>Optimize the largest visible content and its delivery path.</li>
+                    <li>Reserve layout space for images, fonts, and dynamic content.</li>
+                    <li>Reduce JavaScript work during input and interaction.</li>
+                    <li>Re-test on real devices and slower connections.</li>
+                </ol>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Developer Portfolio. Built with HTML &amp; CSS.</p>
+    </footer>
+</body>
+</html>

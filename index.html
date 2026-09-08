@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <meta name="description" content="Read practical web development articles by Sumaiya about frontend engineering, API design, technical SEO, accessibility, and website performance.">
+    <meta name="author" content="Sumaiya">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://sumaiya.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Development Blog | Sumaiya">
+    <meta property="og:description" content="Practical insights on building accessible, fast, and scalable web experiences.">
+    <meta property="og:url" content="https://sumaiya.dev/">
+    <meta property="og:site_name" content="Sumaiya | Full-Stack Web Developer">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Web Development Blog | Sumaiya">
+    <meta name="twitter:description" content="Practical insights on frontend engineering, APIs, SEO, and web performance.">
+    <title>Web Development Blog | Sumaiya - Full-Stack Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://sumaiya.dev/#person",
+                "name": "Sumaiya",
+                "jobTitle": "Full-Stack Web Developer",
+                "url": "https://sumaiya.dev/"
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://sumaiya.dev/#website",
+                "url": "https://sumaiya.dev/",
+                "name": "Sumaiya | Full-Stack Web Developer",
+                "publisher": {"@id": "https://sumaiya.dev/#person"}
+            },
+            {
+                "@type": "Blog",
+                "@id": "https://sumaiya.dev/#blog",
+                "url": "https://sumaiya.dev/#blog",
+                "name": "Web Development Blog by Sumaiya",
+                "description": "Practical articles about frontend development, API design, SEO, accessibility, and performance.",
+                "publisher": {"@id": "https://sumaiya.dev/#person"},
+                "blogPost": [
+                    {"@type": "BlogPosting", "headline": "Building Better User Experiences: A Practical Guide to Accessible UI", "datePublished": "2026-01-15", "author": {"@id": "https://sumaiya.dev/#person"}, "url": "https://sumaiya.dev/blog.html#building-better-user-experiences"},
+                    {"@type": "BlogPosting", "headline": "API Design Essentials for Reliable Web Applications", "datePublished": "2026-02-10", "author": {"@id": "https://sumaiya.dev/#person"}, "url": "https://sumaiya.dev/blog.html#api-design-essentials"},
+                    {"@type": "BlogPosting", "headline": "Website Performance: The Improvements Users Notice First", "datePublished": "2026-03-05", "author": {"@id": "https://sumaiya.dev/#person"}, "url": "https://sumaiya.dev/blog.html#website-performance"}
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -18,6 +64,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact" class="btn-nav">Contact Me</a></li>
         </ul>
     </nav>
@@ -129,8 +176,40 @@
     <section id="projects" class="section">
         <h2 class="section-title">Featured <span class="text-accent">Projects</span></h2>
         <div class="grid projects-grid">
-            
             <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>AnZDecor Furniture Store</h3>
+                    <p>A premium furniture and interior design storefront featuring handcrafted live-edge wood, epoxy art, luxury dining collections, and custom services.</p>
+                    <div class="tags">
+                        <span class="tag-sm">E-Commerce</span>
+                        <span class="tag-sm">Furniture</span>
+                        <span class="tag-sm">Responsive UI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://anzdecor.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Weather Forecast </h3>
+                    <p>Headless weather Forecast website with real-time updates and location-based forecasts.</p>
+                    <div class="tags">
+                        <span class="tag-sm">Script.js</span>
+                        <span class="tag-sm">Tailwind</span>
+                        <span class="tag-sm">Weather API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://sumaiyabnislam.github.io/WeatherForcast/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/sumaiyabnislam/WeatherForcast" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
             <div class="project-card">
                 <div class="project-info">
                     <h3>SaaS Dashboard Platform</h3>
@@ -146,24 +225,53 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Project 2 -->
-            <div class="project-card">
+    <!-- Blog Section -->
+    <section id="blog" class="section bg-alt">
+        <div class="blog-intro">
+            <p class="eyebrow">Knowledge base</p>
+            <h2 class="section-title">Latest From <span class="text-accent">My Blog</span></h2>
+            <p>Actionable notes from the workbench: clear frontend architecture, dependable APIs, and the technical details that make websites easier to use and find.</p>
+        </div>
+        <div class="grid blog-grid">
+            <a class="project-card blog-card blog-card-link" href="blog.html#building-better-user-experiences">
                 <div class="project-info">
-                    <h3>E-Commerce Storefront</h3>
-                    <p>Headless e-commerce solution with lightning-fast load times, custom checkout, and inventory tracking.</p>
+                    <p class="article-meta"><time datetime="2026-01-15">January 15, 2026</time> · 8 min read</p>
+                    <h3>Building Better User Experiences: A Practical Guide to Accessible UI</h3>
+                    <p>Good interface design starts with understanding what people need to accomplish. Learn how responsive structure, keyboard-friendly interactions, readable content, and useful feedback combine into an experience that works for more people.</p>
                     <div class="tags">
-                        <span class="tag-sm">Next.js</span>
-                        <span class="tag-sm">Tailwind</span>
-                        <span class="tag-sm">Shopify API</span>
+                        <span class="tag-sm">Frontend</span>
+                        <span class="tag-sm">Accessibility</span>
                     </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+                    <span class="read-article">Read article <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <a class="project-card blog-card blog-card-link" href="blog.html#api-design-essentials">
+                <div class="project-info">
+                    <p class="article-meta"><time datetime="2026-02-10">February 10, 2026</time> · 10 min read</p>
+                    <h3>API Design Essentials for Reliable Web Applications</h3>
+                    <p>A stable API is a product contract. This guide covers resource-oriented URLs, consistent status codes, useful error responses, validation, pagination, authentication boundaries, and versioning decisions that prevent avoidable client-side complexity.</p>
+                    <div class="tags">
+                        <span class="tag-sm">Backend</span>
+                        <span class="tag-sm">REST APIs</span>
+                    </div>
+                    <span class="read-article">Read article <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <a class="project-card blog-card blog-card-link" href="blog.html#website-performance">
+                <div class="project-info">
+                    <p class="article-meta"><time datetime="2026-03-05">March 5, 2026</time> · 7 min read</p>
+                    <h3>Website Performance: The Improvements Users Notice First</h3>
+                    <p>Performance work becomes easier when it follows the user journey. Learn how to reduce render-blocking work, serve appropriately sized assets, reserve layout space, and prioritize the content people came to see.</p>
+                    <div class="tags">
+                        <span class="tag-sm">Performance</span>
+                        <span class="tag-sm">Core Web Vitals</span>
                     </div>
                 </div>
-            </div>
-
+                <span class="read-article">Read article <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
         </div>
     </section>
 
@@ -175,16 +283,16 @@
             <div class="contact-details">
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope"></i>
-                    <span>your.email@example.com</span>
+                    <span>bintenurulislam@gmail.com</span>
                 </div>
                 <div class="contact-item">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>Your City, Country</span>
+                    <span>Chattogram, Bangladesh</span>
                 </div>
             </div>
             <div class="social-links">
-                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/sumaiyabnislam" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://bd.linkedin.com/in/sumaiya-b-9344091b8" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
